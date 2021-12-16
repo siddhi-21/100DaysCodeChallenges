@@ -1,0 +1,86 @@
+<head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Corinthia&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.heading {
+  background: black;
+  height: 25rem;
+  width: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animate {
+  font-size: 5rem;
+  background: -webkit-linear-gradient(
+    #9ffbfb,
+    #e6b31e,
+    #ffb6ff,
+    #ff5403,
+    #f2f4f6
+  );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Corinthia", cursive;
+      animation-name: animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+@keyframes animate {
+  0%{
+        transform: translateY(-152px);
+}
+25%{
+ transform: translateY(-200px);
+
+}
+}
+h1.animate::nth-letter(1){
+    animation-delay: 1s;
+}
+h1:nth-child(2){
+    animation-delay: 2s;
+}
+h1:nth-child(3){
+    animation-delay: 3s;
+}
+h1:nth-child(4){
+    animation-delay: 4s;
+}
+h1:nth-child(5){
+    animation-delay: 5s;
+}
+h1:nth-child(6){
+    animation-delay: 6s;
+}
+h1:nth-child(7){
+    animation-delay: 7s;
+}
+h1:nth-child(8){
+    animation-delay: 8s;
+}
+
+</style>
+</head>
+
+<body>
+  <div class='heading'>
+    <h1 class="animate">
+      animated </h1>
+     
+  </div>
+</body>
